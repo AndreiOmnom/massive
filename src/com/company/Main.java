@@ -1,8 +1,10 @@
 package com.company;
 
+
+
 import com.company.Arrayservice.ArrayService;
 
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 
@@ -10,26 +12,21 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] array = {10, 556, 4, 39, 17};
+        Scanner scanner = new Scanner(System.in);
+        int len = scanner.nextInt();
+        int[] nums = new int[len];
+        for (int i = 0; i < len; i++) {
+            nums[i] = scanner.nextInt();
+            }
+     //       ArrayService.findShortestLongest(nums, len);
+        ArrayService.sortByHighest(nums, len);
+        }
 
-        System.out.println(Arrays.toString(array));
-        Arrays.sort(array, 0, 5);
-        System.out.println(Arrays.toString(array));
-
-//        Scanner scanner = new Scanner(System.in);
-//        int len = scanner.nextInt();
-//        String[] nums = new String[len];
-        //      int len2 = scanner.nextInt();
-        //     String[] nums2 = new String[len2];
-//        for (int i = 0; i < len; i++) {
-//            nums[i] = scanner.next();
-        //    for (int i = 0; i < len2; i++) {
-        //       nums2[i] = scanner.next();
-//            }
-//        ArrayService.Sortirovka(nums, len);
-        //     ArrayService.findShortestLongest(nums, len);
+    private static class next {
     }
 }
+
+
 
 //            ArrayService.thirdArray(nums,nums2, len);
      //   }

@@ -18,7 +18,8 @@ public class Main {
         for (int i = 0; i < len; i++) {
             nums[i] = scanner.nextInt();
         }
-        ArrayService.PositiveNumber(nums, len);
+        ArrayService.AriphmeticMean(nums, len);
+//        ArrayService.PositiveNumber(nums, len);
 //        for (int num : nums) {     //For each num- это текущий элемент
 //            System.out.println(num + "");
 

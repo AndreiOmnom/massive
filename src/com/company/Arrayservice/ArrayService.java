@@ -1,17 +1,36 @@
 package com.company.Arrayservice;
 
 public class ArrayService {
-    public static void PositiveNumber(int[] nums, int len) {
-        int number = 0;
-        for (int i = 0; i < len; i++) {
-            if (nums[i] > 0) {
-               number = number + 1;
-            }
+     //     упр.2. найти среднее арифметическое. вывести только те которые больше среднего арифм
+     public static void AriphmeticMean(int[] nums, int len) {
 
-        }
-        System.out.println("Количество положительных элементов" + number);
-    }
+
+          float i1 = 0;
+          for (int i = 0; i < len; i++) {
+               i1 = i1 + nums[i];
+          }
+          float mean = i1 / len;
+          System.out.println("среднее арифметическое:" + mean);
+          for (int i = 0; i < len; i++) {
+               if (nums[i] > mean){
+                    System.out.print(nums[i] + " ");
+               }
+          }
+     }
 }
+
+//  упр.1 в массиве найти количество положительныхэлементов
+//    public static void PositiveNumber(int[] nums, int len) {
+//        int number = 0;
+//        for (int i = 0; i < len; i++) {
+//            if (nums[i] > 0) {
+//               number = number + 1;
+//            }
+//
+//        }
+//        System.out.println("Количество положительных элементов" + number);
+//    }
+//}
     //         public static void Sortirovka(String[]args) {
 //             int[] array = {1, 5, 4, 3, 7}; //объявляем и инициализируем массив
 //

@@ -17,14 +17,19 @@ public class Main {
         int[] nums = new int[len];
         for (int i = 0; i < len; i++) {
             nums[i] = scanner.nextInt();
-            }
-     //       ArrayService.findShortestLongest(nums, len);
-        ArrayService.sortByHighest(nums, len);
         }
+        ArrayService.PositiveNumber(nums, len);
+//        for (int num : nums) {     //For each num- это текущий элемент
+//            System.out.println(num + "");
 
-    private static class next {
+//            ArrayService.sortByChet(nums, len);
+            //       ArrayService.findShortestLongest(nums, len);
+            //  ArrayService.sortByHighest(nums, len);
+
+        }
     }
-}
+
+
 
 
 
